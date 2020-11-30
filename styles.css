@@ -1,0 +1,63 @@
+body, html {
+   background-color: #a7a7a7;
+}
+
+h1 {
+   text-align: center;
+   font-weight: bold;
+   font-size: 70px;
+   padding-bottom: 20px;
+   background: rgb(0,128,0);
+   background: linear-gradient(307deg, rgba(0,128,0,1) 49%, rgba(0,0,0,1) 51%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.main {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.mazeblock {
+   padding: 30px;
+}
+
+.description {
+   padding: 30px;
+}
+
+#gamefield {
+   position: relative;
+}
+
+#gamefield > div {
+   border-left: 1px solid rgba(255,255,255, 0.05);
+   border-top: 1px solid rgba(255,255,255, 0.05);
+   position: absolute;
+   background-color: green;
+}
+
+#gamefield > .untouched {
+   background-color: #222;
+}
+
+#gamefield > .wall {
+   background-color: #222;
+}
+
+#gamefield > .permanent {
+   background-color: #222;
+}
+
+#gamefield > .crackedwall {
+   background-color: #444;
+}
+
+#gamefield > .player {
+   background-color: #F00;
+}
+
+#gamefield > .exit {
+   background-color: white;
+}
